@@ -1,0 +1,28 @@
+.wrap{
+  max-width: 640px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.button{
+  display: block;
+  color: #333;
+  background: #ccc;
+  width: 100%;
+  max-width: 240px;
+  border: none;
+  border-radius: 3px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  transition: 0.5s;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  &.is-hover:hover{
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    filter: brightness(1.05);
+  }
+  &.is-active:active{
+    box-shadow: none;
+    filter: brightness(0.8);
+  }
+}
